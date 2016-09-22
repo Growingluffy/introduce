@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="edge" /> 
+	
+	<title>自我介绍</title>
+	<link rel="shortcut icon" href="images/icon.ico"/>
+	<link rel="stylesheet" href="css/my.css">
+	<link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+    	.error{
+    		color:#a10;
+    	}
+    	#sign .btn-disabled{
+    		background: #C6C6C6;
+    		pointer-events:none;
+    	}
+    	div.success input{
+    		border:1px solid #008484;
+    	}
+    	.sign input.success{
+    		border:1px solid #008484;
+    	}
+    </style>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/my.js"></script>
+
+</head>
+<body ng-app = "myApp">
+<!-- 展开收起广告 -->
+	<div id="ad">
+		<div class="img_bg"></div>
+		<div class="img_sm"></div>
+		<span class="iconfont">&#xe602;</span>
+	</div>
+
+
+<!-- 页顶 -->
+	<div id="wrapHeader" class="gradient">
+		<div id="header">
+			<div class="time fl">
+				<a href="http://www.imooc.com/" class="myLogo"><img src="images/myLogo.png" alt="主页">我的简历</a>
+
+			</div>
+			<div class="signIn fr">
+				<a href="javascript:;" class="btn"><span class="iconfont icon-xinxing  "></span>点赞</a>
+				|
+				<a href="javascript:;">
+					<span class="iconfont ">&#xe603;</span>联系我
+					<div class="phone gradient" >
+						电话：18126116598 <br>
+						邮箱：601345280@qq.com
+					</div>
+				</a>
+				|
+				<a href="javascript:;" id="denglu"><span class="iconfont ">&#xe60a;</span>登陆弹窗</a>
+			</div>
+		</div>
+	</div>
+
+
+<!-- 导航与搜索栏 -->
+	<div id="nav">
+		<div class="fNav fl">
+			<ul>
+				<li>
+					<a href="demo/En/index.html" target="_blank" class="ieffect">英文网站
+						<span class="icontent1"><i class="iconfont ">&#xe609;</i></span>
+					</a>
+				</li>
+				<li>
+					<a href="demo/b2b/index.html" target="_blank" class="ieffect">电商网站
+						<span class="icontent2"><i class="iconfont ">&#xe60e;</i></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="search fl" >
+		    <p>应聘前端工程师</p>
+			<form action="https://cn.bing.com/search" target="_blank">
+				<input type="text" placeholder="有求必应" class="text">
+				<input type="submit" class="submit" value="">
+			</form>
+		</div>
+		<div class="rNav fr">
+			<ul>
+				<li>
+					<a href="demo/boot/demo.html" class="ieffect" target="_blank">bootstrap
+						<span class="icontent3"><i class="iconfont ">&#xe604;</i></span>
+					</a>
+				</li>
+				<li>
+					<a href="demo/fullpage/fullpage.html" target="_blank" class="ieffect">全屏滚动
+						<span class="icontent4"><i class="iconfont ">&#xe607;</i></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+<!-- 内容区 -->
+	<div id="content">
+	<!-- 轮播图 -->
+		<div class="carousel">
+			<div class="wrapCarl">
+				<ul class="carl-cont">
+					<li>
+						<a href="#"><img src="images/content/carl1.png" alt="" ></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/content/carl2.png" alt="" ></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/content/carl3.png" alt=""></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/content/carl4.png" alt="" ></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/content/carl5.png" alt=""></a>
+					</li>
+				</ul>
+				<ul class="carl-icon">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+
+				<!-- 3d信息框 -->
+				<div class="info3d">
+					<ul class="list-title fl">
+						<li class="active">个人信息</li>
+						<li>教育背景</li>
+						<li>前端技能</li>
+						<li>工作经历</li>
+						<li>个人优势</li>
+						<li>期待工作</li>
+					</ul>
+					<ul class="list-con fr">
+						<li class="show">
+							<div class="listInfo1 listInfo">
+								<div class="toptext">
+									<img src="images/me.png" alt="" class="fl">
+									<div class="fl">
+										<h3>赵廉</h3>
+										<p>
+											性别：男 <br>
+											籍贯：广西 <br>
+											出生日期：1993年 <br>
+											联系方式：18126116598 <br>
+											邮箱：601345280@qq.com 
+										</p>
+									</div>
+
+								</div>
+								<div class="bottext">
+									<span class="on">About</span>
+									<span>Education</span>
+									<span>Work</span>
+								</div>
+								<strong class="icon-box1 iconfont">&#xe603;</strong>
+								<strong class="icon-box2 iconfont">&#xe60a;</strong>
+							</div>
+						</li>
+						<li >
+							<div class="listInfo2 listInfo">
+								<div class="toptext">
+									<img src="images/zhengda.png" alt="" class="fl">
+									<div class="fl">
+										<h3>郑州大学</h3>
+										<p>
+											学历：一本<br>
+											专业：结构设计 <br>
+											毕业时间：2015年7月 <br>
+											学校属性：国家211工程大学 
+										</p>
+									</div>
+
+								</div>
+								<div class="bottext">
+									<span >About</span>
+									<span class="on">Education</span>
+									<span>Work</span>
+								</div>
+								<strong class="icon-box1 iconfont">&#xe60e;</strong>
+								<strong class="icon-box2 iconfont">&#xe606;</strong>
+							</div>
+						</li>
+						<li >
+							<div class="listInfo3 olistInfo">
+								<div class="info-top">
+									<img src="images/qq.jpg" alt="" class="fl">
+									<div class="fl">
+										<a href="javascript:;">html</a>
+										<a href="javascript:;">css3</a>
+										<a href="javascript:;">javascript</a>
+										<a href="javascript:;">jquery</a>
+										<a href="javascript:;">bootstrap</a>
+										<a href="javascript:;">W3C</a>
+									</div>
+								</div>
+								<div class="info-bot">
+									html、css、尤其对css3比较熟悉，熟练应用JavaScript和jquery，掌握bootstrap、angularjs和sass框架。对常见的页面信息和图片交互能用原生js写出来。
+								</div>
+							</div>
+						</li>
+						<li >
+							<div class="listInfo4 listInfo">
+								<div class="toptext">
+									<img src="images/zhongjian.png" alt="" class="fl">
+									<div class="fl" id="specil">
+										<h3>深圳五十里有限公司</h3>
+										<i>1年工作经验</i>
+										<p >
+										    14年在学习跟着社团学习半年并模仿做了一些项目。15年经同学介绍在五十里公司做过一个“100度享乐网”首页的项目。
+ 
+										</p>
+									</div>
+
+								</div>
+								<div class="bottext">
+									<span >About</span>
+									<span >Education</span>
+									<span class="on">Work</span>
+								</div>
+								<strong class="icon-box1 iconfont">&#xe603;</strong>
+								<strong class="icon-box2 iconfont">&#xe606;</strong>
+							</div>
+						</li>
+						<li >
+							<div class="listInfo5 olistInfo">
+								<div class="info-top">
+									<img src="images/qq.jpg" alt="" class="fl">
+									<div class="fl">
+										<a href="javascript:;">学习能力</a>
+										<a href="javascript:;">正规211工程大学毕业</a>
+										
+										
+										
+									</div>
+								</div>
+								<div class="info-bot">
+									学习能力强，能够不断地学习互联网新知识，工作态度认真，善于思考，对新技术充满热情。同时，善于与同事沟通合作，有团队意识。
+								</div>
+							</div>
+						</li>
+						<li >
+							<div class="listInfo6 olistInfo">
+								<div class="info-top">
+									<img src="images/qq.jpg" alt="" class="fl">
+									<div class="fl">
+										<a href="javascript:;">有节假日</a>
+										<a href="javascript:;">气氛活跃</a>
+										<a href="javascript:;">薪酬：5K~8K</a>
+										<a href="javascript:;">办公环境良好</a>
+										
+										
+									</div>
+								</div>
+								<div class="info-bot">
+									能适应各种团队氛围，同时快速熟悉新知识，有一定的技术功底，能介绍适当的加班。希望找一个既能为公司付出又能继续学到知识的公司。
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="info-bar ">
+					<span>Hi~你好!</span>
+					<a href="javascript:;" id="show-info"><i class="iconfont icon-denglu"></i>请查看</a>
+					<p>
+						赵廉 <br>
+						211工程 <br>
+						
+					</p>
+					<div class="my">
+						<span>慕课网</span>
+						<a href="http://www.imooc.com/" ></a>
+						<em>学习</em>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- 学习介绍 -->
+	    <div class="showtime">
+	    	<div class="info">
+	    		<dl>
+	    			<dt style="color:#844242;font-weight: bolder;">技术板块</dt>
+	    			<dd>html、css、css3</dd>
+	    			<dd>js、jq、ajax等相对熟练</dd>
+	    			<dd>angularjs有基本的认识</dd>
+	    			<dd>熟悉bootstrap、scss等</dd>
+	    			<dd>熟练Firebug等工具</dd>
+	    		</dl>
+	    		<dl>
+	    			<dt>学习</dt>
+	    			<dd>辞职后做了笔记有6本</dd>
+	    			<dd>对css3有自己的理解</dd>
+	    			<dd>工作后将继续学习新知识</dd>
+	    			<dd>熟练sublime和webstorm</dd>
+	    		</dl>
+	    	</div>
+
+	    	<div class="shade">
+	    		<ul>
+	    			<li >
+	    				<img src="images/content/list1.png" alt="">
+	    				<a href="http://www.imooc.com/course/programdetail/pid/32" target="_blank">
+	    					<strong>Web前端</strong>
+	    					<span>学习
+	    					   <sup>28门</sup>
+	    					</span>
+	    				</a>
+	    			</li>
+	    			<li >
+	    				<img src="images/content/list2.png" alt="">
+	    				<a href="http://www.imooc.com/course/programdetail/pid/21"  target="_blank">
+	    					<strong>电商网站</strong>
+	    					<span>学习
+	    					   <sup>8门</sup>
+	    					</span>
+	    				</a>
+	    				
+	    			</li>
+	    			<li >
+	    				<img src="images/content/list3.png" alt="">
+	    				<a href="http://www.imooc.com/course/programdetail/pid/26" target="_blank">
+	    					<strong>信息展示</strong>
+	    					<span>学习
+	    					   <sup>8门</sup>
+	    					</span>
+	    				</a>
+	    				
+	    			</li>
+	    			<li >
+	    				<img src="images/content/list4.png" alt="">
+	    				<a href="http://www.imooc.com/course/programdetail/pid/28"  target="_blank">
+	    					<strong>JS开发</strong>
+	    					<span>学习
+	    					   <sup>6门</sup>
+	    					</span>
+	    				</a>
+	    				
+	    			</li>
+	    			<li >
+	    				<img src="images/content/list5.png" alt="">
+	    				<a href="http://www.imooc.com/course/programdetail/pid/35" target="_blank">
+	    					<strong>网页特效</strong>
+	    					<span>学习
+	    					   <sup>7门</sup>
+	    					</span>
+	    				</a>
+	    				
+	    			</li>
+	    			<li >
+	    				<img src="images/content/list6.png" alt="">
+	    				<a href="http://www.imooc.com/course/programdetail/pid/22" target="_blank">
+	    					<strong>响应式</strong>
+	    					<span>学习
+	    					   <sup>4门</sup>
+	    					</span>
+	    				</a>
+	    				
+	    			</li>
+	    			
+	    		</ul>
+	    	</div>
+	    	<div class="photo">
+	    	    <div>本网页从设计、找素材修图到写代码，全程都由我自己构思编辑和敲代码。网页内容展示我个人信息和所学的大部分知识点。</div>
+	    		<img src="images/content/photo-bg.gif" alt="">
+
+	    	</div>
+	    </div>
+
+    <!-- school生活 -->
+        <div class="school">
+        	<div class="video fl" >
+        	    <div class="vshow" id="video-show">
+        	    	<ul >
+	        			<li ><img src="images/content/slide-big1.png" alt=""></li>
+	        			<li ><img src="images/content/slide-big2.png" alt=""></li>
+	        			<li ><img src="images/content/slide-big3.png" alt=""></li>
+	        			<li><img src="images/content/slide-big4.png" alt=""></li>
+	        			<li class="on">
+	        				<embed src='http://player.youku.com/player.php/sid/XNzMzMjcxNjY4/v.swf' allowFullScreen='true' quality='high' width='450' height='250' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+	        			</li>
+	        		</ul>
+	        		<div class="text" ></div>
+        	    </div>
+        		
+        		<div class="vwarp" id="video-list">
+        			<ul style="left:-150px;">
+	        			<li index="5"><img src="images/content/slide5.png" alt="" index="5"></li>
+	        			<li index="1"><img src="images/content/slide1.png" alt="" index="1"></li>
+	        			<li index="2"><img src="images/content/slide2.png" alt="" index="2"></li>
+	        			<li index="3"><img src="images/content/slide3.png" alt="" index="3"></li>
+	        			<li index="4"><img src="images/content/slide4.png" alt="" index="4"></li>
+	        			<li index="5"><img src="images/content/slide5.png" alt="" index="5"></li>
+	        			<li index="1"><img src="images/content/slide1.png" alt="" index="1"></li>
+	        			<li index="2"><img src="images/content/slide2.png" alt="" index="2"></li>
+
+	        		</ul>
+	        		<span class="left iconfont">&#xe605;</span>
+	        		<span class="right iconfont">&#xe60d;</span>
+        		</div>
+        		
+        	</div>
+        	<div class="calendar fl">
+        		<div class="box">
+        			<h4 class="clear">
+        				<span>MON</span>
+        				<span>TUE</span>
+        				<span>WED</span>
+        				<span>THU</span>
+        				<span>FRI</span>
+        				<span>SAT</span>
+        				<span style="margin-right:0;">SUN</span>
+        			</h4>
+        			<ul>
+        			    <li class="normal">28</li>
+        			    <li class="normal">29</li>
+        			    <li class="normal">30</li>
+        			    <li class="normal">31</li>
+        				<li class="active">1
+                           <img src="images/content/school7.png" alt="2011年8月" info="拿着郑州大学录取通知书报道啦~">
+        				</li>
+        				<li>2</li>
+        				<li>3</li>
+        				<li>4</li>
+        				<li class="active">5
+        				   <img src="images/content/school1.png" alt="2011年10月" info="大三第一个学期拿过一次三等奖！">
+        				</li>
+        				<li>6</li>
+        				<li>7</li>
+        				<li>8</li>
+        				<li class="active">9
+        				    <img src="images/content/school5.png" alt="2012年4月" info="大一到大二期间担任院团委干事">
+        				</li>
+        				<li>10</li>
+        				<li class="active">11
+        				    <img src="images/content/school3.png" alt="2012年11月" info="校运会，大学四年是院篮球队队员，每个年级选五个人。">
+        				</li>
+        				<li>12</li>
+        				<li>13</li>
+        				<li class="active">14
+        				    <img src="images/content/school4.png" alt="2014年4月" info="大三和大四一段时间在计算机协会学习，这里是社团组织活动！">
+        				</li>
+        				<li>15</li>
+        				<li>16</li>
+        				<li>17</li>
+        				<li>18</li>
+        				<li>19</li>
+        				<li class="active">20
+        				    <img src="images/content/school2.png" alt="2015年3月" info="大学主修结构设计，对建筑学和四大力学都有较深的理解">
+        				</li>
+        				<li>21</li>
+        				<li>22</li>
+        				<li class="active">23
+        				    <img src="images/content/school9.png" alt="2015年5月" info="大四第一学期就在学校签约了中国建筑第二工程局的工作！" >
+        				</li>
+        				<li>24</li>
+        				<li class="active">25
+        				   <img src="images/content/school10.png" alt="2015年7月" info="经同学介绍在五十里公司工作" >
+        				</li>
+        				<li>26</li>
+        				<li>27</li>
+        				<li class="active">28
+        				    <img src="images/content/school8.png" alt="2015年10月" info="回到本专业公司工作~~~"> 
+        				</li>
+        				<li>29</li>
+        				<li>30</li>
+        				<li class="normal">1</li>
+        				
+        			</ul>
+        			<!-- js -->
+        			<div class="today">
+        			    <img src="images/content/school1.png" alt="">
+        			    <div class="text fr">
+        			    	<h5><strong>THU</strong><em>本日主题</em></h5>
+	        				<p>做一个好员工</p>
+        			    </div>
+        				<span></span>
+        			</div>
+        		</div>
+        		<div class="info">
+        			<h3>郑州大学</h3>
+        			<div>3</div>
+        			<span>2011年9月入学</span>
+        			<span>2015年7月毕业</span>
+        			<p>
+        				<h4>荣誉</h4>
+        				<a href="#">院学生会</a><br>
+        				<a href="#">三等奖学金</a><br>
+        				<a href="#">院篮球队</a><br>
+        				<a href="#">老乡联盟主席团</a><br>
+        			</p>
+        		</div>
+        	</div>
+        </div>
+
+    <!-- 信息滚动 -->
+        <div class="roll">
+        	<div class="inforoll fl">
+        	   <div class="info fl">本项目的web技术点</div>
+        	   <div class="con fl">
+        	   	 <ul>
+        	   	 	<li>one顶栏可以点赞，可以登陆，有联系方式。</li>
+        	   	 	<li>two导航栏四个网页可以进入，请点击跳转。</li>
+        	   	 	<li>three焦点图个人信息部分可以点击切换。</li>
+        	   	 	<li>four焦点图鼠标滑过小圆圈延迟后出现该张图片。</li>
+        	   	 	<li>five技术板块遮罩图可以点击跳转。</li>
+        	   	 	<li>six无缝滚动轮播图可以点击切换大图。</li>
+        	   	 	<li>seven本条信息右侧可以点击打开抽奖模式。</li>
+        	   	 	<li>eight工作板块3D翻页是根据当前时间显示。</li>
+        	   	 	<li>nine最后一板块手风琴点击可以切换。</li>
+        	   	 	<li>ten右侧条点击可以导航，且第一个头像点击可以打开信息栏。</li>
+        	   	 </ul>
+        	   </div>
+        	</div>
+        	<div class="bonus fr " id="bonus">
+        		<div class="text ">请点击按钮！</div>
+        		<div class="btn " id="btn">
+        			<span>开始</span>
+        			<span>停止</span>
+        		</div>
+        	</div>
+        	<div class="roll-bg">
+        		<img src="images/html-bg.png" alt="">
+        	</div>
+        </div>
+
+    <!-- work介绍 -->
+        <div class="work">
+        	<div class="ago fl">
+        		<div class="space3d">
+        			<div class="pagegroup">
+        				<div class="page" id="page1">1</div>
+        				<div class="page" id="page2">2</div>
+        				<div class="page" id="page3">3</div>
+        				<div class="page" id="page4">4</div>
+        				<div class="page" id="page5">5</div>
+        				<div class="page" id="page6">6</div>
+        			</div>
+        		</div>
+        		<h4>工作介绍板块</h4>
+        		<p class="text">
+        			
+        			<span>深圳五十里</span><br>
+        			<span>本专业工作9个月</span><br>
+        			<span>后考上公务员</span><br>
+        			<span>辞职后开始学习前端</span>
+        		</p>
+        	</div>
+        	<div class="company fl">
+        		<div class="upcom">
+        			<div class="box fl" id="box1">
+        				<img src="images/content/box1-img.png" alt="">
+        				<div class="text">
+        					<h4>五十里</h4>
+        					<span>三个月工作</span><br>
+        					<span>100度享乐网</span><br>
+        					<span>经同学介绍</span>
+        					
+        				</div>
+        			</div>
+        			<div class="box fl" id="box2">
+        				<img src="images/content/box2-img.png" alt="">
+        				<div class="text">
+        					<h4>中建</h4>
+        					<p>本专业工作</p>
+        					<p>后辞职</p>
+        					
+        				</div>
+        			</div>
+        		</div>
+        		<div class="downcom clear">
+        			<div class="box fl" id="box3">
+        				<img src="images/content/box3-img.png" alt="">
+        				<div class="text">
+        					<h4>公务员</h4>
+        					<p>广西16年省考</p>
+        					<p>复习一个月</p>
+        					
+        				</div>
+        				<div class="border"></div>
+        			</div>
+        			<div class="box fl" id="box4">
+        				<img src="images/content/box4-img.png" alt="">
+        				<div class="text">
+        					<h4>前端</h4>
+        					<p>有兴趣</p>
+        					<p>有一定技术</p>
+        					
+        				</div>
+        				<div class="border"></div>
+        			</div>
+        			<div class="box fl" id="box5">
+        				<img src="images/content/box5-img.png" alt="">
+        				<div class="text">
+        					<h4>新工作</h4>
+        					<p>能锻炼能力</p>
+        					<p>学习新知识</p>
+        					
+        				</div>
+        				<div class="border1"></div>
+        				<div class="border2"></div>
+        				<div class="border3"></div>
+        				<div class="border4"></div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="infobar fl">
+        		<ul>
+        			<li class="on">
+        			    <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>计算机协会</span><br><strong>2014年3月</strong></p>
+        			    	<em>ONE</em>
+        			    </div>
+        				<p ><em>01</em><span>学习前端</span></p>
+        			</li>
+        			<li>
+                        <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>到深圳分公司</span><br><strong>2015年7月</strong></p>
+        			    	<em>TWO</em>
+        			    </div>
+        				<p><em>02</em><span>本专业培训入职</span></p>
+        			</li>
+        			<li>
+        			    <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>网站首页项目</span><br><strong>2015年7~10月</strong></p>
+        			    	<em>THREE</em>
+        			    </div>
+        				<p><em>03</em><span>五十里</span></p>
+        			</li>
+        			<li>
+        			    <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>没有做前端</span><br><strong>2015年10月</strong></p>
+        			    	<em>FOUR</em>
+        			    </div>
+        				<p><em>04</em><span>本专业工作开始</span></p>
+        			</li>
+        			<li>
+        			    <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>考上公务员</span><br><strong>2016年4月</strong></p>
+        			    	<em>FIVE</em>
+        			    </div>
+        				<p><em>05</em><span>辞职考公务员</span></p>
+        			</li>
+        			<li>
+        			    <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>做了几个项目</span><br><strong>2016年5月</strong></p>
+        			    	<em>SIX</em>
+        			    </div>
+        				<p><em>06</em><span>重新学习前端</span></p>
+        			</li>
+        			<li>
+        			    <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>自学前端技术</span><br><strong>2016年5月</strong></p>
+        			    	<em>SEVEN</em>
+        			    </div>
+        				<p><em>07</em><span>自学前端技术</span></p>
+        			</li>
+        			<li>
+        			    <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>请看项目</span><br><strong>2014年到2016年</strong></p>
+        			    	<em>EIGHT</em>
+        			    </div>
+        				<p><em>08</em><span>一年工作经验</span></p>
+        			</li>
+        			<li>
+        			    <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>决定做前端</span><br><strong>2016年</strong></p>
+        			    	<em>NINE</em>
+        			    </div>
+        				<p><em>09</em><span>前端兴趣</span></p>
+        			</li>
+        			<li>
+        			    <div >
+        			    	<img src="images/zhongjian.png" alt="2015年7月" class="fl">
+        			    	<p class="fr">
+	        			    	<span>国企靠关系</span><br><strong>不喜欢</strong></p>
+        			    	<em>THE</em>
+        			    </div>
+        				<p><em>10</em><span>做真正的技术</span></p>
+        			</li>
+        		</ul>
+        	</div>
+        </div>
+    
+    <!-- web介绍 -->
+        <div class="web">
+        	<div class="accordion">
+        		<div class="ia-container">
+				
+					<figure>
+						<img src="images/accordion/1.gif" alt="image01" />
+						<input type="radio" name="radio-set" checked="checked"/>
+						<figcaption>
+							<span>
+								<em>Introduce</em>
+								本网页内容区分四个板块，分别介绍“前端学习”、“学历”、“工作经历”和“技术内容”来展现。
+
+							</span>
+						</figcaption>
+						
+						<figure>
+							<img src="images/accordion/2.gif" alt="image02" />
+							<input type="radio" name="radio-set" />
+							<figcaption>
+								<span>
+										<em>Project</em>
+										本网页运用到较多的css3技术，同时分别展现对js、jq，anglarjs的运用，在手风琴处加入一个插件来展示对插件的应用。
+
+								</span>
+							</figcaption>
+							
+							<figure>
+								<img src="images/accordion/5.gif" alt="image03" />
+								<input type="radio" name="radio-set" />
+								<figcaption>
+									<span>
+										<em>Learn</em>
+										我写了6大本笔记和3小本口袋书，其中有系统的知识体系，还有各种demo中我自己理解的知识点。
+
+									</span>
+								</figcaption>
+								
+								<figure>
+									<img src="images/accordion/4.gif" alt="image04" />
+									<input type="radio" name="radio-set" />
+									<figcaption>
+										<span>
+											<em>Skill</em>
+											可以说对css的知识点很熟练，能掌握js和jq的大体知识体系。对bootstrap、sass、angularjs、php等有基础的了解。
+
+										</span>
+									</figcaption>
+									
+									<figure>
+										<img src="images/accordion/3.gif" alt="image05" />
+										<input type="radio" name="radio-set" />
+										<figcaption>
+											<span>
+												<em>Web</em>
+												在导航栏进去的四个网页，都是我通过课程视频模仿做出来的，在慕课网上的帐号学习时长为600+小时。
+
+											</span>
+										</figcaption>
+										
+										<figure>
+											<img src="images/accordion/6.gif" alt="image06" />
+											<input type="radio" name="radio-set" />
+											<figcaption>
+											    <span>
+												<em>Experience</em>
+												本项目中提供了我所有的信息，从14年接触前端到重拾前端，都是经过深思熟虑，希望贵公司提供个职位。
+
+											</span>
+											</figcaption>
+								
+											
+												
+											</figure>
+								
+										</figure>	
+											
+									</figure>	
+										
+								</figure>
+									
+							</figure>
+							
+						</figure>
+						
+					</figure>
+					
+				</div>
+        	</div>
+
+        	<div class="csswall">
+        		<img src="images/accordion/wall1.png" alt="" class="pic1" width=140 height=190>
+        		<img src="images/accordion/wall2.png" alt="" class="pic2" width=220 height=140>
+        		<img src="images/accordion/wall3.png" alt="" class="pic3" width=200 height=150 >
+        		<img src="images/accordion/wall4.png" alt="" class="pic4" width=140 height=180>
+        		<img src="images/accordion/wall5.png" alt="" class="pic5" >
+        		<img src="images/accordion/wall6.png" alt="" class="pic6" width=250 height=110>
+        		
+        	</div>
+        </div>
+
+
+	</div>
+
+
+<!-- 页脚 -->
+	<div id="footer">
+		<div class="footer-wrap">
+			<p>
+				<span>关于我</span>
+				|
+				<span>联系我</span>
+				|
+				<span>公司招收</span>
+				|
+				<span>人文环境</span>
+			    |
+				<span>团队介绍</span>
+				|
+				<span>薪酬水平</span>
+				|
+				<span>办公环境</span>
+			</p>
+			<p>
+				<span>本网页历时12天完成</span>
+				|
+				<span>全程边设计边写代码</span>
+				|
+				<span>所有知识点我可以现场还原</span>
+				|
+				<span>有些知识点懂逻辑但代码记不住</span>
+			    |
+				<span>2016.5—2016.9</span>
+				|
+				<span>仅代表个人水平</span>
+				
+			</p>
+			<p>
+				<span>QQ:601345280</span>
+				|
+				<span>Programming@</span>
+				|
+				<span>版权所有者</span>
+			    |
+				<span>zihan</span>
+				|
+				<span>Web</span>
+				|
+				<span>Phone:18126116598</span>
+			</p>
+		</div>
+	</div>
+
+<!-- 侧边条 -->
+	<div id="sideBar" class="clear">
+	    <div class="bar fl">
+	    	<span class="icon1">
+	    		<img src="images/qq.jpg" alt="">
+	    		<i></i>
+	    	</span>
+			<span class="icon2">
+			    <div class="text">
+			    	页 <br>
+					面 <br>
+					导 <br>
+					航 <br>
+			    </div>
+				<i></i>
+				<div class="tip"></div>
+			</span>
+			<span class="icon3 iconfont icon">&#xe613; <div class="tip">个人信息</div></span>
+			<span class="icon4 iconfont icon">&#xe60f;<div class="tip">技术板块</div></span>
+			<span class="icon5 iconfont icon">&#xe614;<div class="tip">学历板块</div></span>
+			<span class="icon6 iconfont icon">&#xe612;<div class="tip">工作经历</div></span>
+			<span class="icon7 iconfont icon">&#xe615;<div class="tip">内容板块</div></span>
+			<span class="icon8 iconfont icon">&#xe610;
+				<div class="tip"><img src="images/weixin.png" alt="" width=150 height=150></div>
+			</span>
+			<span class="icon9 iconfont backup">&#xe611;<div class="tip"></div></span>
+	    </div>
+	    <div class="myinfo fl">
+	    	<dl>
+	    		<dt>项目介绍</dt>
+	    		<dd><span>1</span>、登陆框采用angularjs技术模拟登陆。</dd>
+	    		<dd><span>2</span>、登陆框同时可以拖拽再屏幕中移动。</dd>
+	    		<dd><span>3</span>、顶栏“点赞”运用伪类调整iconfont小图标。</dd>
+	    		<dd><span>4</span>、导航栏四个网页分别是过去我做过的四个页面。</dd>
+	    		<dd><span>5</span>、个人介绍部分模拟了电商商品分类。</dd>
+	    		<dd><span>6</span>、模拟“轮播图”部分鼠标到五个小圆点处够一定时间后才切换图片。</dd>
+    			<dd><span>7</span>、学历板块左侧模拟天猫“无缝滚动轮播图”，点击任意一张小图可以切换到大图显示。</dd>
+    			<dd><span>8</span>、“日历栏”用js自动生成提示框在当前日期的位置。</dd>
+    			<dd><span>9</span>、项目技术点处模拟了“信息无缝滚动”和“抽奖系统”。</dd>
+    			<dd><span>10</span>、工作板块处左侧采用3D形式来显示“当前时间”的秒数。</dd>
+    			<dd><span>11</span>、工作板块中间分别展示了5个css3技术的运用。</dd>
+    			<dd><span>12</span>、最后一个板块展示一个手风琴的插件运用。</dd>
+    			<dd><span>13</span>、同时js部分分别采用js和jq来展示我对js和jq的熟练度。</dd>
+	    	</dl>	
+	    </div>
+		
+	</div>
+
+
+<!-- 弹窗 -->
+    <div class="sign" id="sign"  ng-controller="signIn">
+       
+        	<h3 class="text-center">登陆</h3>
+	    	<form  ng-submit="submitForm()" name="signUpForm" class="submintform">
+	    		<div ng-class="{'success':signUpForm.username.$valid}">
+	    			<label for="username">用户名:</label>
+	    			<input type="text" 
+	    			name=username 
+	    			id="username"
+	    			required 
+	    			placeholder="请输入用户名"
+	    			ng-maxlength="10"
+	    			ng-minlength="3"
+	    			
+	    			ng-model="userdata.username" >
+	    			<p class="error" ng-if="(signUpForm.username.$error.maxlength||signUpForm.username.$error.minlength)&&signUpForm.username.$dirty">请输入3~10位的字符</p>
+	    		</div>
+	    		<div>
+		    		<label for="password1">密码:</label>
+	    			<input type="password" 
+	    			name=password1 
+	    			id="password1"
+	    			required
+	    			placeholder="请输入密码"
+	    			ng-minlength="6"
+	    			ng-maxlength="16"
+	    			ng-class="{'success':signUpForm.password1.$valid}"
+	    			ng-model="userdata.password1">
+	    			<p class="error" ng-if="(signUpForm.password1.$error.maxlength||signUpForm.password1.$error.minlength)&&signUpForm.password1.$dirty">请输入6~16位的字符</p>
+    			</div>
+	    		<div>
+	    			<label for="password2">确认密码:</label>
+	    			<input type="password" 
+	    			name=password2 
+	    			id="password2"
+	    			required
+	    			placeholder="请确认密码后再点击登陆"
+	    			ng-minlength="6"
+	    			ng-maxlength="16"
+	    			ng-class="{'success':signUpForm.password2.$valid}"
+	    			ng-model="userdata.password2">
+	    			<p class="error" ng-if="userdata.password1!=userdata.password2">两次密码输入不一致</p>
+	    		</div>
+	    		<button type="submit" 
+
+	    		ng-class = "{'btn-disabled':signUpForm.username.$invalid || signUpForm.password1.$invalid || userdata.password1!=userdata.password2}"
+	    		>登陆</button>
+	    	</form>
+       
+    	
+    </div>
+    <div class="sign-bg" id="shade"></div>
+
+
+
+</body>
+</html>
